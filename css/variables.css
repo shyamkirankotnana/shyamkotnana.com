@@ -1,0 +1,46 @@
+/* variables.css - Color schemes and variables */
+:root {
+    /* Color palette */
+    --primary: #3b82f6;         /* Primary brand color */
+    --primary-focus: #2563eb;   /* Primary hover state */
+    --primary-content: #ffffff; /* Text on primary color */
+    
+    /* Neutral shades */
+    --base-100: #ffffff;        /* Main background */
+    --base-200: #f8fafc;        /* Secondary background */
+    --base-300: #e2e8f0;        /* Borders, dividers */
+    --base-content: #0f172a;    /* Main text color */
+    
+    /* Typography */
+    --font-family: 'Inter', system-ui, sans-serif;
+    
+    /* Spacing */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-4: 1rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-12: 3rem;
+    
+    /* Borders */
+    --rounded-sm: 0.125rem;
+    --rounded-md: 0.375rem;
+    --rounded-lg: 0.5rem;
+    --rounded-full: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark theme overrides */
+  [data-theme="dark"] {
+    --primary: #60a5fa;
+    --primary-focus: #3b82f6;
+    
+    --base-100: #1e293b;
+    --base-200: #0f172a;
+    --base-300: #334155;
+    --base-content: #f1f5f9;
+  }

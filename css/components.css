@@ -1,0 +1,116 @@
+/* components.css - UI Components */
+
+/* Cards */
+.card {
+    background-color: var(--base-100);
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+  }
+  
+  .card-body {
+    padding: var(--spacing-6);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-2);
+  }
+  
+  /* Navigation */
+  .navbar {
+    height: 4rem;
+    padding: 0 var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: var(--spacing-4);
+  }
+  
+  .nav-link {
+    color: var(--base-content);
+    font-weight: 500;
+    padding: var(--spacing-2) var(--spacing-2);
+    border-radius: var(--rounded-md);
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-link:hover, .nav-link.active {
+    background-color: var(--base-200);
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: var(--spacing-12) 0;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--base-200);
+    padding: var(--spacing-8) 0;
+  }
+  
+  /* Badge */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--rounded-full);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .badge-primary {
+    background-color: var(--primary);
+    color: var(--primary-content);
+  }
+  
+  /* Stats */
+  .stats {
+    display: grid;
+    background-color: var(--base-200);
+    border-radius: var(--rounded-lg);
+    padding: var(--spacing-4);
+  }
+  
+  .stat {
+    text-align: center;
+    padding: var(--spacing-4);
+  }
+  
+  .stat-title {
+    opacity: 0.7;
+    font-size: 0.875rem;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .stat-desc {
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }

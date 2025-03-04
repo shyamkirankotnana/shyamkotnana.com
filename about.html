@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.0/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Add HTMX for dynamic content loading -->
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    
+    <!-- Configure Tailwind Typography Plugin -->
+    <script>
+      tailwind.config = {
+        plugins: [
+          function({ addUtilities }) {
+            const newUtilities = {
+              '.prose': {
+                maxWidth: '65ch',
+                color: 'var(--tw-prose-body)',
+                '& a': {
+                  color: 'var(--tw-prose-links)',
+                  textDecoration: 'underline',
+                  fontWeight: '500',
+                },
+                '& strong': {
+                  color: 'var(--tw-prose-bold)',
+                  fontWeight: '600',
+                },
+                '& ol': {
+                  listStyleType: 'decimal',
+                  paddingLeft: '1.625em',
+                },
+                '& ul': {
+                  listStyleType: 'disc',
+                  paddingLeft: '1.625em',
+                },
+                '& li': {
+                  marginTop: '0.5em',
+                  marginBottom: '0.5em',
+                },
+                '& h2': {
+                  color: 'var(--tw-prose-headings)',
+                  fontWeight: '700',
+                  fontSize: '1.5em',
+                  marginTop: '2em',
+                  marginBottom: '1em',
+                  lineHeight: '1.3333333',
+                },
+                '& p': {
+                  marginTop: '1.25em',
+                  marginBottom: '1.25em',
+                },
+              },
+              '.max-w-none': {
+                maxWidth: 'none',
+              },
+            };
+            addUtilities(newUtilities);
+          }
+        ],
+      };
+    </script>
+
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>About - Shyamkiran Kotnana</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar bg-base-100 shadow-md">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="expertise.html">Expertise</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost normal-case text-xl">Shyamkiran Kotnana</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content" class="max-w-6xl mx-auto px-4 py-12 animate-fadeIn">
+        <h1 class="text-4xl font-bold mb-8 text-center">About Me</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="prose max-w-none">
+                    <p class="lead text-lg">
+                        I am an organic digital marketing strategist and technology leader with over 15 years of experience bridging cutting-edge technology and digital marketing to drive transformative growth.
+                    </p>
+                    
+                    <p>
+                        I empower businesses to succeed through innovative organic SEO, content marketing, and digital transformation strategies. Since 2017, my journey with Digitalveda has been marked by clear, measurable successes:
+                    </p>
+                    
+                    <ul class="mt-4">
+                        <li>Partnered with 45 clients across four regions</li>
+                        <li>Built 39 websites from scratch</li>
+                        <li>Implemented numerous projects scaling to millions of impressions</li>
+                        <li>Delivered impactful social media strategies for 19 clients</li>
+                        <li>Trained over 114 professional students with 80+ placements in MNCs</li>
+                        <li>Launched three innovative entrepreneurial projects</li>
+                    </ul>
+                    
+                    <p class="mt-4">
+                        By effectively managing 11 employees and mentoring 21 interns, I have sharpened my cross-functional leadership skills and continuously refined a unique blend of creative strategy and data-driven execution.
+                    </p>
+                    
+                    <h2 class="text-2xl font-bold mt-8 mb-4">Leadership & Impact</h2>
+                    <p>
+                        My leadership approach combines creative strategy with data-driven insights to empower teams to innovate and exceed their targets. I believe in cultivating a culture of continuous learning, open communication, and collaborative problem-solving. This ensures that every initiative contributes to measurable business success and sustainable growth.
+                    </p>
+                    
+                    <h2 class="text-2xl font-bold mt-8 mb-4">Technical Expertise</h2>
+                    <p>
+                        With extensive hands-on experience using industry-leading tools such as Google Search Console, advanced reporting and querying techniques, keyword tracking, Google Analytics dashboard reporting, WordPress, Ahrefs, SEMrush, various AI tools, and Canva, I optimize performance and drive results.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-1">
+                <div class="card bg-base-200 shadow-xl mb-6">
+                    <div class="card-body">
+                        <h2 class="card-title">Professional Journey</h2>
+                        
+                        <div class="mt-4">
+                            <div class="flex items-start mb-4">
+                                <div class="bg-primary rounded-full h-6 w-6 flex items-center justify-center mt-1">
+                                    <span class="text-primary-content text-sm">1</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold">Digitalveda Marketing Concepts LLP</h3>
+                                    <p class="text-sm opacity-80">Founding Partner</p>
+                                    <p class="text-sm opacity-80">June 2017 - Present</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-4">
+                                <div class="bg-primary rounded-full h-6 w-6 flex items-center justify-center mt-1">
+                                    <span class="text-primary-content text-sm">2</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold">Mowbly</h3>
+                                    <p class="text-sm opacity-80">Release & Delivery Manager</p>
+                                    <p class="text-sm opacity-80">January 2016 - May 2017</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-4">
+                                <div class="bg-primary rounded-full h-6 w-6 flex items-center justify-center mt-1">
+                                    <span class="text-primary-content text-sm">3</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold">Virtusa</h3>
+                                    <p class="text-sm opacity-80">Release Manager</p>
+                                    <p class="text-sm opacity-80">November 2015 - January 2016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-4">
+                                <div class="bg-primary rounded-full h-6 w-6 flex items-center justify-center mt-1">
+                                    <span class="text-primary-content text-sm">4</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold">Cordys (OpenText)</h3>
+                                    <p class="text-sm opacity-80">Situation Manager / Team Lead</p>
+                                    <p class="text-sm opacity-80">May 2012 - July 2015</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-primary rounded-full h-6 w-6 flex items-center justify-center mt-1">
+                                    <span class="text-primary-content text-sm">5</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold">Accenture Technology Solutions</h3>
+                                    <p class="text-sm opacity-80">Software Engineer</p>
+                                    <p class="text-sm opacity-80">April 2008 - May 2012</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-base-200 shadow-xl">
+                    <div class="card-body">
+                        <h2 class="card-title">Education & Certifications</h2>
+                        
+                        <div class="mt-4">
+                            <h3 class="font-bold">Education</h3>
+                            <ul class="list-disc list-inside text-sm mt-2">
+                                <li>MBA, HRM - Vinayaka Mission's Research Foundation (2010-2012)</li>
+                                <li>B.Sc. Statistics, Mathematics and Computer Science - Andhra University (2004-2007)</li>
+                            </ul>
+                            
+                            <h3 class="font-bold mt-4">Certifications</h3>
+                            <ul class="list-disc list-inside text-sm mt-2">
+                                <li>PRINCE2 Practitioner</li>
+                                <li>SCJP</li>
+                                <li>ITIL V3 Foundation</li>
+                                <li>Knowledge-Centered Support</li>
+                                <li>PRINCE2 Foundation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-center mt-12">
+            <button class="btn btn-primary" hx-get="expertise.html" hx-target="#content" hx-swap="innerHTML transition:true">
+                Explore My Expertise
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+            <span class="footer-title">Services</span> 
+            <a class="link link-hover">Digital Marketing</a> 
+            <a class="link link-hover">SEO Strategy</a> 
+            <a class="link link-hover">Content Marketing</a> 
+            <a class="link link-hover">Website Development</a>
+        </div> 
+        <div>
+            <span class="footer-title">Company</span> 
+            <a href="about.html" class="link link-hover">About</a> 
+            <a href="expertise.html" class="link link-hover">Expertise</a> 
+            <a href="projects.html" class="link link-hover">Projects</a> 
+            <a href="training.html" class="link link-hover">Training</a>
+        </div> 
+        <div>
+            <span class="footer-title">Contact</span> 
+            <a href="mailto:shyamkiran.kotnana@gmail.com" class="link link-hover">Email</a> 
+            <a href="tel:+919014459204" class="link link-hover">Phone</a> 
+            <a href="https://www.linkedin.com/in/shyamkirankotnana" target="_blank" class="link link-hover">LinkedIn</a>
+        </div>
+    </footer>
+    <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+        <div class="items-center grid-flow-col">
+            <p>© 2025 Shyamkiran Kotnana. All rights reserved.</p>
+        </div> 
+        <div class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+                <a href="https://www.linkedin.com/in/shyamkirankotnana" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add animation definition -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
+</body>
+</html>
