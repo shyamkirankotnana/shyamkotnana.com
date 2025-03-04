@@ -1,0 +1,12 @@
+/* Animation classes for transitions */
+.htmx-swapping {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+}
+
+.htmx-settling {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+/* Add your custom styles here */
